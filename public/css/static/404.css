@@ -1,0 +1,19 @@
+#page-404 {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-404 .row {
+    text-align: center;
+    
+}
+
+#page-404 h2 {
+    font-size: 8em;
+}
+
+#page-404 a {
+    margin-top: 56px;
+}

@@ -1,0 +1,193 @@
+/* Start Banner - Desktop */
+#banner-contact {
+    background: url("../../uploads/images/cement-pouring-back.jpg")rgba(0, 0, 0, 0.863);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+   
+    
+}
+
+#banner-contact .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 328px;
+    
+}
+
+#banner-contact .row h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    
+
+}
+
+/* End Banner - Desktop */
+
+/* Start Banner - Tablet */
+@media (max-width: 921px){
+    #banner-contact {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+
+    #banner-contact .row {
+        width: 100%;
+        height: 200px;
+        
+    }
+}
+
+/* End Banner - Tablet */
+
+/* Start Banner - Mobile */
+@media (max-width: 650px){
+    #banner-contact {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    #banner-contact .row {
+        width: 100%;
+        height: 150px;
+        
+    }
+}
+
+/* End Banner - Mobile */
+
+
+/* Start Info Contact - Desktop */
+
+
+#contact-info {
+    background: var(--black);
+    
+}
+
+#contact-info a,
+#contact-info p {
+    color: white;
+}
+
+#contact-info .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+#contact-info .row .col-1 {
+    flex-basis: 50%;
+    
+}
+
+#contact-info .row .col-1 iframe {
+   
+    width: 100%;
+    height: 100%;
+}
+
+#contact-info .row .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 104px 50px 104px 50px;
+    flex-basis: 600px;
+    gap: 30px;
+    
+}
+
+#contact-info .row .col-2 .info {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+#contact-info .row .col-2 .info i {
+    background: var(--orange);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 60px;
+}
+
+
+
+
+
+/* Start Info Contact - Tablet */
+
+
+/* Start Info Contact - Tablet */
+@media (max-width: 921px){
+    #contact-info {
+        width: 100%;
+    }
+
+
+    #contact-info .row {
+       margin-right: 24px;
+    }
+
+    #contact-info .row .col-1 iframe {
+   
+        width: 400px;
+        height: 100%;
+    }
+
+    #contact-info .row .col-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 72px 50px 72px 50px;
+        gap: 20px;
+        
+    }       
+}
+
+/* End Info Contact - Tablet */
+
+/* Start Info Contact - Mobile */
+@media (max-width: 650px){
+    #contact-info {
+        padding-top: 72px;
+    }
+
+
+    #contact-info .row {
+       flex-direction: column-reverse;
+       width: 100%;
+       
+
+    }
+
+    #contact-info .row .col-2 {
+        padding: 0px;
+        width: 100%;
+        min-width: 0%;
+        flex-basis: 0;
+        flex-basis: 100%;
+        padding-bottom: 72px;
+        padding-left: 16px;
+       padding-right: 16px;
+        box-sizing: border-box;
+     
+    }
+
+
+    #contact-info .row .col-1 iframe {
+   
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* End Info Contact - Mobile */

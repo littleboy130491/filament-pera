@@ -1,0 +1,154 @@
+/* Start Pre Footer - Desktop */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: var(--black) url("../../uploads/images/vector\ footer.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-top: 104px;
+    padding-bottom: 30px;
+}
+
+#footer h6,
+#footer p,
+#footer a  {
+    color: white;
+}
+
+
+#footer p,
+#footer a {
+    font-size: 15px;
+}
+
+
+#footer .row {
+    
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#footer .col-1 img {
+    width: 157px;
+    height: 65px;
+}
+
+#footer .col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#footer .col-2 .about {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#footer .col-2 .contact {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#footer .col-2 .contact .address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#footer .col-2 .contact .address a,
+#footer .col-2 .contact .contact-link a{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+#footer .col-2 .contact .address a:hover i,
+#footer .col-2 .contact .contact-link a:hover i{
+    color: var(--orange);
+}
+
+
+#footer .col-2 .contact .address i,
+#footer .col-2 .contact .contact-link i{
+    line-height: 23px; /* 143.75% */ 
+}
+
+#footer .col-2 .contact .address .contact-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+#footer .col-3 {
+    margin-top: 50px;
+} 
+
+
+/* End Pre Footer - Desktop */
+
+/* Start Pre Footer - Tablet */
+@media (max-width: 921px){
+    #footer {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 72px;
+        padding-bottom: 30px;
+       
+    }
+
+   
+
+    #footer h6 {
+        font-size: 16px;
+    }
+    
+    #footer .col-2 .contact .address {
+        gap: 15px;
+    }
+
+    #footer .col-2 .contact .address .contact-link {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #footer p,
+#footer a {
+    font-size: 14px;
+}
+}
+
+
+/* End Pre Footer - Tablet */
+
+
+/* Start Pre Footer - Mobile */
+@media (max-width: 921px) {
+    #footer {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 72px;
+        padding-bottom: 30px;
+    }
+
+    #footer .col-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+}

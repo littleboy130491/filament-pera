@@ -1,0 +1,213 @@
+/* Start Banner - Desktop */
+#banner-products {
+    background: url("../../uploads/images/concreting-from-the-pipe-back.jpg")rgba(0, 0, 0, 0.863);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    
+    
+}
+
+#banner-products .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 328px;
+    
+}
+
+#banner-products .row h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    
+
+}
+
+/* End Banner - Desktop */
+
+/* Start Banner - Tablet */
+@media (max-width: 921px){
+    #banner-products {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+
+    #banner-products .row {
+        width: 100%;
+        height: 200px;
+        
+    }
+}
+
+/* End Banner - Tablet */
+
+/* Start Banner - Mobile */
+@media (max-width: 650px){
+    #banner-products {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    #banner-products .row {
+        width: 100%;
+        height: 150px;
+        
+    }
+}
+
+/* End Banner - Mobile */
+
+
+/* Start Products - Desktop */
+#archive-products-content {
+    margin-top: 104px;
+    margin-bottom: 104px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#archive-products-content .row {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+#archive-products-content .row .col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+#archive-products-content .row .col-1 h2,
+#archive-products-content .row .col-1 h6
+{
+    text-align: center;
+
+}
+
+#archive-products-content .row .col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#archive-products-content .row .col-2 .item {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+
+}
+
+#archive-products-content .row .col-2 .product-thumb img {
+    height: 310px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#archive-products-content .row .col-2 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: 31px;
+}
+
+#archive-products-content .row .col-2 .content .button {
+    margin-top: 10px;
+}
+
+
+/* End Products - Desktop */
+
+/* Start Products - Tablet */
+@media(max-width: 921px){
+
+    #archive-products-content .row .col-1 h2,
+    #archive-products-content .row .col-1 h6
+    {
+    text-align: left;
+
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    #archive-products-content {
+        margin-top: 72px;
+        margin-bottom: 72px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    #archive-products-content .row {
+        width: 100%;
+        gap: 20px;
+    }
+
+    #archive-products-content .row .col-1 {
+        margin-bottom: 20px;
+    
+    }
+
+    #archive-products-content .row .col-2 .product-thumb img {
+        margin: 24px;
+        
+    }
+}
+
+/* End Products - Tablet */
+
+
+/* Start Products - Mobile */
+@media(max-width: 650px){
+
+    #archive-products-content .row {
+        width: 100%;
+        gap: 0px;
+    }
+
+
+
+    #archive-products-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #archive-products-content .row .col-2 .item {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 32px 16px;
+    }
+
+    #archive-products-content .row .col-2 .product-thumb {
+        margin-top: 24px;
+    }
+
+    #archive-products-content .row .col-2 .product-thumb img {
+        width: 100%;
+        height: 400px;
+        margin: 0px;
+        
+    }
+
+    #archive-products-content .row .col-2 .content {
+        margin: 0px;
+    }
+
+  
+
+}

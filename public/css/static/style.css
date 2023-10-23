@@ -1,0 +1,843 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/* Font Settting Desktop */
+
+h1 {
+  font-family: "Montserrat";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+h2 {
+  font-family: "Montserrat", "Times New Roman";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+
+
+h4 {
+  font-family: "Montserrat";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+
+h5 {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+h6 {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+
+p,
+label,
+placeholder {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  /* 143.75% */
+}
+
+a {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  /* 143.75% */
+}
+
+.nav a,
+#above-header a {
+  font-family: "Montserrat";
+}
+
+#above-header a {
+  font-family: "Open Sans";
+}
+
+
+
+
+/* Font Settting Tablet */
+@media(max-width: 921px) {
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+
+}
+
+/* Font Settting Mobile*/
+@media(max-width: 650px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+
+
+
+}
+
+/* Color Setting */
+
+:root {
+  --green: #105951;
+  --orange: #FF8500;
+  --black: #181818;
+  --back: #F5F5F5;
+  --text: #4A4A4A;
+  --activelink: #181818;
+}
+
+h1 {
+  color: white;
+}
+
+h2,
+h3,
+h4 {
+  color: var(--black);
+}
+
+h6,
+h5 {
+  color: var(--orange);
+}
+
+.dual-heading {
+  color: var(--orange);
+}
+
+p,
+label {
+  color: var(--text)
+}
+
+
+/* Button Setting - Desktop */
+
+.button,
+button {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  display: inline-flex;
+  padding: 15px 30px;
+  align-items: flex-start;
+  gap: 10px;
+  color: white;
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  z-index: 10;
+
+}
+
+.button:hover,
+button:hover {
+  background: darkred;
+  border-color: darkred;
+  color: white;
+
+}
+
+
+
+
+.btn1 {
+  background: var(--orange);
+
+
+}
+
+.btn2 {
+  background: white;
+  color: var(--orange)
+}
+
+.btn3 {
+  background: none;
+  border: 1px solid white;
+
+}
+
+.btn4 {
+  background: var(--black);
+  color: var(--orange);
+
+}
+
+.btn5 {
+  background: rgba(0, 0, 0, 0.574);
+  border: 1px solid rgba(165, 165, 165, 0.194);
+
+
+}
+
+
+
+.icon-btn {
+  width: 16px;
+  height: auto;
+}
+
+
+/* Button Setting - Tablet*/
+@media(max-width: 921px) {
+  .button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+
+  .icon-btn {
+    width: 11px;
+    height: auto;
+  }
+
+}
+
+
+/* Button Setting - Mobile*/
+@media(max-width: 650px) {
+  .button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+
+  .icon-btn {
+    width: 11px;
+    height: auto;
+  }
+
+}
+
+/* Container */
+.row {
+  width: 1200px;
+}
+
+
+/* Header */
+
+/* animation border */
+.nav li a {
+  position: relative;
+}
+
+
+.nav li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 20;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: white;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.nav li a:hover:before {
+  width: 100%;
+}
+
+.nav li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li.upward a:before {
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+
+.nav li.upward a:hover:before {
+  bottom: 0px;
+  opacity: 1;
+}
+
+.nav li.forward a:before {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.nav li.forward a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+li a:is(:link, :active, :visited) {
+  color: white;
+}
+
+a:is(:link, :active, :visited).curent-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 20;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: white;
+
+
+}
+
+/* sticky */
+.nav.sticky a:is(:link, :active, :visited).curent-item::before {
+
+  height: 2px !important;
+
+}
+
+.nav.sticky li a:before {
+  height: 2px !important;
+}
+
+/* End animation border */
+
+.nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999999999999;
+
+}
+
+.nav .nav-links {
+  width: 1200px;
+  min-width: 921px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.nav {
+  width: 100%;
+  padding: 0px 0px;
+  background: var(--orange);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  z-index: 999999;
+  padding: 16px 0px;
+}
+
+.nav h3 {
+
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  line-height: 0px;
+  margin-top: -2px;
+  margin-left: 5px;
+
+}
+
+.nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+
+.nav-item {
+  color: white;
+
+}
+
+.nav a:hover {
+  color: white;
+
+}
+
+
+
+.nav .logo,
+.nav .social-media {
+  display: none;
+}
+
+.nav .nav-links {
+  column-gap: 20px;
+  list-style: none;
+}
+
+.nav .nav-links a {
+  transition: all 0.2s linear;
+}
+
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+
+}
+
+
+.overlay-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 9999999;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.719);
+  /* Black w/ opacity */
+
+}
+
+
+
+@media screen and (max-width: 921px) {
+
+
+  .nav li a:before {
+    background: none;
+  }
+
+
+  a:is(:link, :active, :visited).curent-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 20;
+    left: 0;
+    height: 0px;
+    width: 0%;
+    background: none;
+    color: var(--orange);
+
+
+  }
+
+  a:is(:link, :active, :visited).curent-item {
+    color: var(--orange);
+  }
+
+  .nav .nav-links {
+    width: 1200px;
+    min-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+  .nav .logo {
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+  }
+
+
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: block;
+    margin-left: 0 auto;
+  }
+
+  .uil.uil-bars.navOpenBtn {
+    width: 70px;
+  }
+
+  .nav a:hover {
+    color: var(--orange);
+
+  }
+
+  .nav-links img {
+    width: 100px;
+  }
+
+  .nav {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+
+  .nav .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .nav .social-media i {
+    color: white;
+  }
+
+  .nav .social-media i:hover {
+    color: white;
+  }
+
+
+
+  .nav .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    max-width: 310px;
+    width: 100%;
+    padding-top: 70px;
+    row-gap: 30px;
+    flex-direction: column;
+    background: url('../../images/timelapse-time-lapse-flat-view-construction-and-de-2023-07-05-22-33-31-utc.jpg') rgba(0, 0, 0, 0.822);
+    background-blend-mode: overlay;
+    background-size: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 100;
+    z-index: 99999999999;
+  }
+
+  .nav .nav-links {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .nav.openNav .nav-links {
+    left: 0;
+
+  }
+
+  .nav .navOpenBtn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .nav .navCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+}
+
+
+
+/* translate */
+.glink .curent-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 20;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: white;
+
+}
+
+
+/* Above Header - Desktop */
+
+
+#above-header {
+  height: 30px;
+  background: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#above-header .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#above-header .row .contact-link {
+  display: flex;
+  gap: 20px;
+}
+
+
+#above-header .row .contact-link i {
+  color: var(--orange);
+}
+
+#above-header .row .contact-link a {
+  color: white;
+  font-size: 12px;
+
+}
+
+#above-header .row .contact-link a:hover {
+  color: white;
+}
+
+/* Above Header - Tablet, Mobile*/
+@media(max-width: 921px) {
+  #above-header {
+    display: none;
+  }
+}
+
+/*Form Notification Submit*/
+.alert {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  
+}
+
+.alert-error {
+  background-color: red;
+}
+
+.alert-success {
+  background-color: var(--orange);
+}
+
+.alert p {
+  color: white;
+}

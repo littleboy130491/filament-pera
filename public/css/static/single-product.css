@@ -1,0 +1,248 @@
+/* Start Product - Desktop */
+h1 {
+    color: var(--black);
+}
+
+#product-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: var(--back);
+    padding-top: 104px;
+    padding-bottom: 104px;
+
+}
+
+
+#product-summary .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+#product-summary .row .col-1  {
+    margin-right: 50px;
+}
+
+#product-summary .row .col-1 img {
+    border-radius: 20px;
+}
+
+#product-summary .row .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+
+#product-summary .row .col-2 .button-product {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* End Product - Desktop */
+
+/* Start Product - Tablet */
+@media(max-width: 921px){
+    #product-summary {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    }
+
+    #product-summary .row {
+        width: 100%;
+    }
+
+    #product-summary .row .col-1  {
+        margin-right: 20px;
+    }
+
+    #product-summary .row .col-1 img {
+        max-width: 200px;
+    }
+}
+
+/* End Product - Tablet */
+
+
+/* Start Product - Mobile */
+@media(max-width: 650px){
+
+    #product-summary {
+        padding-top: 32px;
+        padding-bottom: 72px;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        }
+
+    #product-summary .row {
+        flex-direction: column-reverse;
+        gap: 32px
+    
+    }
+
+    #product-summary .row .col-1 img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #product-summary .row .col-2 .button-product {
+        
+        flex-wrap: wrap;
+      
+    }
+}
+
+/* End Product - Mobile */
+
+/* Start Product Description - Desktop */
+#product-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 104px;
+}
+
+#product-description h1,
+#product-description h2,
+#product-description h3,
+#product-description h4, 
+#product-description h5,
+#product-description h6 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: var(--black);
+}
+
+
+/* End Product Description - Desktop */
+
+
+/* Start Product Description - Tablet */
+@media(max-width: 921px){
+    #product-description {
+        margin-top: 72px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-bottom: 72px;
+    }
+}
+/* End Product Description - Tablet */
+
+/* Start Product Description - Mobile */
+@media(max-width: 650px){
+    #product-description {
+        margin-top: 62px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 72px;
+    }
+}
+
+/* End Product Description - Mobile */
+
+
+/* Start Product List - Desktop */
+#product-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 104px;
+    margin-bottom: 104px;
+}
+
+#product-list .row {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#product-list .row .item {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border-bottom: 1px solid #bbbbbb;
+    border-style: dashed;
+    padding-bottom: 30px;
+    
+}
+
+
+#product-list .row .item .thumb {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#product-list .row .item:last-child {
+    border: none;
+}
+
+#product-list .row .item img {
+    border-radius: 20px;
+    width: 250px;
+}
+
+#product-list h1,
+#product-list h2,
+#product-list h3,
+#product-list h4, 
+#product-list h5,
+#product-list h6 {
+    margin-bottom: 8px;
+    color: var(--black);
+}
+
+/* End Product List - Desktop */
+
+/* Start Product List - Tablet */
+@media(max-width: 921px){
+    #product-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 72px;
+        margin-bottom: 72px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    #product-list .row .item img {
+        width: 150px;
+    }
+
+    #product-list .row .item {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+    }
+}
+
+
+/* Start Product List - Mobile */
+@media(max-width: 650px){
+    #product-list {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 32px;
+    }
+
+    #product-list .row .item {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-bottom: 50px;
+
+    }
+
+    #product-list .row .item img {
+        width: 100%;
+    }
+
+}

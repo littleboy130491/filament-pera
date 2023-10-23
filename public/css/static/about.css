@@ -1,0 +1,273 @@
+/* Start Banner - Desktop */
+#banner-about {
+    background: url("../../uploads/images/cement-mixer-\ back.jpg")rgba(0, 0, 0, 0.863);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    
+    
+}
+
+#banner-about .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 568px;
+    width: 700px;
+    gap: 20px;
+    
+}
+
+#banner-about .row h1,
+#banner-about .row h6,
+#banner-about .row p
+ {
+  text-align: center;
+    
+
+}
+
+
+#banner-about .row p
+ {
+  color: white;
+   
+
+}
+
+
+/* End Banner - Desktop */
+
+/* Start Banner - Tablet */
+@media (max-width: 921px){
+    #banner-about {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+
+    #banner-about .row {
+        width: 550px;
+        height: 250px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+    }
+}
+
+/* End Banner - Tablet */
+
+/* Start Banner - Mobile */
+@media (max-width: 650px){
+    #banner-about {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    #banner-about .row {
+        width: 100%;
+        height: 250px;
+        
+    }
+}
+
+/* End Banner - Mobile */
+
+
+/* Start About Section */
+.about-page #about {
+    background: none;
+}
+
+/* End About Section */
+
+/* Start Improves Section - Desktop */
+
+#improves {
+    margin-bottom: 104px;
+}
+
+#improves .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+
+    
+}
+
+#improves .row h2 {
+    text-align: center;
+}
+
+#improves .row .col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+
+#improves .row .col-2 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.10); 
+    width: 20%;
+    padding: 20px;
+
+}
+
+#improves .row .col-2 .item h4 {
+    text-align: center;
+    font-size: 17px;
+}
+ 
+/* End Improves Section - Desktop */
+
+
+/* Start Improves - Tablet */
+@media (max-width: 921px){
+    #improves {
+        margin-bottom: 72px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    #improves .row {
+        width: 100%;
+    }
+
+    #improves .row .col-2 {
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+}
+
+/* End Improves - Tablet */
+
+
+/* Start Improves - Mobile */
+@media (max-width: 650px){
+    #improves {
+        margin-bottom: 72px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #improves .row {
+        width: 100%;
+    }
+
+    #improves .row .col-2 {
+        gap: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+    #improves .row .col-2 .item {
+        width: 36%;
+    }
+}
+
+/* End Improves - Mobile */
+
+
+/* Start Video About - Desktop */
+#video-about {
+    margin-bottom: 208px;
+}
+
+#video-about .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+
+    
+}
+
+#video-about .row .col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#video-about .row h2,
+#video-about .row h6,
+#video-about .row p {
+    text-align: center;
+}
+
+#video-about .row .col-2 iframe {
+    width: 100%;
+    height: 650px;
+    border-radius: 30px;
+}
+/* End Video About - Desktop */
+
+/* Start Video About - Tablet */
+@media (max-width: 921px){
+    #video-about {
+        margin-bottom: 72px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    #video-about .row {
+        width: 100%;
+    }
+
+    #video-about .row .col-2 {
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    #video-about .row .col-1 {
+        width: 100%;
+    }
+
+    #video-about .row .col-2 iframe {
+        height: 400px;
+        
+    }
+}
+
+/* End Video About - Tablet */
+
+/* Start Video About - Mobile */
+@media (max-width: 650px){
+    #video-about {
+        margin-bottom: 72px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #video-about .row .col-2 iframe {
+        height: 300px;
+    }
+}
+
+/* End Video About - Mobile */
